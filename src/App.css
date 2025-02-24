@@ -1,0 +1,62 @@
+/* Reset default margins and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body background and font */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0; /* Light gray background */
+}
+
+/* Main container */
+.App {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Toolbar for buttons */
+.toolbar {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  gap: 4px;
+}
+
+button {
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 16px;
+  background: white;
+  color: black;
+  border: 1px solid black;
+  border-radius: 4px;
+  /* transition: background-color 0.3s, color 0.3s, border-color 0.3s; */
+}
+
+.toolbar button.active {
+  border-color: #007bff;
+  background: #e6f2ff;
+}
+
+button:hover {
+  background-color: #f0f0f0;
+  color: black;
+}
+
+button:focus {
+  outline: none;
+}
+
+/* Canvas */
+canvas {
+  border: 1px solid #ccc;
+  display: block;
+  margin: auto;
+  background-color: #fff;
+}
